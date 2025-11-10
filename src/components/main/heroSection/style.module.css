@@ -1,0 +1,208 @@
+.heroSection {
+    --background-hero-section: hsl(0, 0%, 97%);
+    --text-main-quote: hsl(195, 50%, 50%);
+    --text-extra-bold: hsl(195, 40%, 50%);
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroSection {
+    display: grid;
+    grid-template-columns: 2fr 430px 40px;
+    background-color: var(--background-hero-section);
+    font-family: var(--font-family);
+}
+
+/* Title Section */
+.titleSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+
+.main_quote {
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-shadow: 1px 1px 5px hsla(0, 0%, 80%, 0.4);
+    color: var(--text-main-quote);
+}
+
+.secondary_text {
+    font-size: 17px;
+    margin: 0 10px;
+    color: hsl(0, 0%, 45%);
+}
+
+.bold_text {
+    font-size: 65px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--text-extra-bold);
+}
+
+.get_appointment_btn {
+    --color-background: var(--blue-900);
+    --transition-duration: 300ms;
+    --padding: 20px;
+
+    width: 180px;
+    height: 50px;
+    margin: 20px 15px;
+    padding: var(--padding);
+
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.25);
+    
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.75px;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    position: relative;
+    background: radial-gradient(circle, var(--color-background), var(--color-background) 100%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0% 100%;
+    
+    transition: background-size var(--transition-duration) ease-in-out, 
+                width var(--transition-duration) ease-in-out, 
+                transform var(--transition-duration) ease-in-out, 
+                box-shadow var(--transition-duration) ease-in-out,
+                color calc(var(--transition-duration) / 2) ease-in-out;
+}
+
+.get_appointment_btn:hover {
+    background-size: 100% 100%;
+    width: 195px;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.arrowSvg {
+    width: 25px;
+    margin: 0;
+    animation: leftToRight 250ms ease-in-out;
+    /* filter: invert(1); */
+    /* translate: -15px 0; */
+    opacity: 0;
+    transition: opacity var(--transition-duration) ease-in-out, translate var(--transition-duration) ease-out;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+.get_appointment_btn:hover .arrowSvg {
+    display: inline-block;
+    translate: 0 0;
+    opacity: 1;
+    filter: invert(1);
+}
+
+@keyframes leftToRight {
+    from {
+        translate: -15px 0;
+        opacity: 0;
+    }
+    to {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+/* Image Section */
+.imageSection {
+    /* width: 430px; */
+    height: 600px;
+    padding: 60px;
+    margin: 30px;
+    position: relative;
+    margin-right: 70px;
+    overflow: visible;
+}
+
+.imgContainer {
+    background-image: url('../../../assets/doctor.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.4s ease-out;
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.imgContainer:hover {
+    /* box-shadow: 0 0 5px black; */
+    transform: rotateZ(2deg) scale(1.02);
+}
+
+.backgroundBoxes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.backgroundBoxes .floatingBox:nth-child(1) {
+    animation: change_top2Bottom 10s ease-in-out infinite;
+}
+.backgroundBoxes .floatingBox:nth-child(2) {
+    animation: change_bottom2Top 10s ease-in-out infinite;
+}
+
+.floatingBox {
+    position: absolute;
+    background-color: hsl(0, 0%, 90%);
+    width: 125px;
+    height: 175px;
+    border-radius: 20px;
+}
+
+@keyframes change_top2Bottom {
+    0%, 40%, 100% {
+        translate: calc(100% + 125px) 0;
+    }
+    45% {
+        translate: calc(100% + 125px) calc(200% + 62.5px);
+    }
+    50%, 90% {
+        translate: calc(0% - 62.5px) calc(200% + 62.5px);
+    }
+    95% {
+        translate: calc(0% - 62.5px) 0;
+    }
+}
+@keyframes change_bottom2Top {
+    0%, 40%, 100% {
+        translate: calc(0% - 62.5px) calc(200% + 62.5px);
+    }
+    45% {
+        translate: calc(0% - 62.5px) 0;
+    }
+    50%, 90% {
+        translate: calc(100% + 125px) 0;
+    }
+    95% {
+        translate: calc(100% + 125px) calc(200% + 62.5px);
+    }
+}

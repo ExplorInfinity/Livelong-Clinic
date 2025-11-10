@@ -1,0 +1,12 @@
+:root {
+  --blue-700: hsl(195, 40%, 60%);
+  --blue-800: hsl(195, 40%, 50%);
+  --blue-900: hsl(195, 75%, 40%);
+  --theme-color-main: var(--blue-900);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
