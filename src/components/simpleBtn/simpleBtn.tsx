@@ -3,34 +3,32 @@ import styles from './style.module.css'
 import type React from "react";
 
 type btnStyles = {
+    textColor?: string
     backgroundColor?: string
     transitionDuration?: number
     justifyContent?: string
     width?: number
-    hoverWidth?: number
 }
 
 type btnProps = {
     text : string
-    svg ?: string
     styleVariables: btnStyles
 }
 
-export default function ColorFillBtn({ text, svg, styleVariables }: btnProps): JSX.Element {
-    const { backgroundColor, transitionDuration, justifyContent, width, hoverWidth }:btnStyles = styleVariables;
+export default function SimpleButton({ text, styleVariables }: btnProps): JSX.Element {
+    const { textColor, backgroundColor, transitionDuration, justifyContent, width }:btnStyles = styleVariables;
 
     return (
         <button style={
             { 
+                "--color-text": textColor,
                 "--color-background": backgroundColor,
                 "--transition-duration": `${transitionDuration}ms`,
                 "--justify-content": justifyContent,
-                "--width": (width ? `${width}px` : null),
-                "--hover-width": ((hoverWidth || width) ? `${hoverWidth ?? width}px` : null)
+                "--width": (width ? `${width}px` : null)
             } as React.CSSProperties
         } className={styles.btn}>
             { text }
-            { svg && <img className={styles.svg} src={svg} alt="img" /> }
         </button>
     );
 }

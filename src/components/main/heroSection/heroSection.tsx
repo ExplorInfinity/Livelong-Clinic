@@ -8,7 +8,12 @@ export default function HeroSection(): JSX.Element {
         <div className={styles.heroSection}>
             <div className={styles.titleSection}>
                 <h1 className={styles.main_quote}>Empowering you to Livelong — and live better.</h1>
-                <ColorFillBtn text="Get Appointment" svg={right_arrow_svg} styleVariables={{ backgroundColor: "hsl(195, 75%, 40%)", transitionDuration: 300 }} />
+                <ColorFillBtn text="Get Appointment" svg={right_arrow_svg} styleVariables={{ 
+                    backgroundColor: "hsl(195, 75%, 40%)", 
+                    transitionDuration: 300,
+                    width: 180,
+                    hoverWidth: 195
+                }} />
             </div>
             <div className={styles.imageSection}>
                 <div className={styles.imgContainer}></div>

@@ -1,9 +1,14 @@
 .btn {
-    /* --color-background: var(--blue-900);
-    --transition-duration: 300ms; */
+    /* --width: 180px;
+    --hover-width: 195px;
+    --color-background: var(--blue-900);
+    --transition-duration: 300ms;
+    --justify-content: start; */
+
     --padding: 20px;
 
-    width: 180px;
+    width: var(--width, 100%);
+    width: max-content;
     height: 50px;
     margin: 20px 15px;
     padding: var(--padding);
@@ -18,25 +23,25 @@
     letter-spacing: 0.75px;
 
     display: flex;
-    /* justify-content: center; */
+    justify-content: var(--justify-content, start);
     align-items: center;
 
     position: relative;
-    background: radial-gradient(circle, var(--color-background), var(--color-background) 100%);
+    background: radial-gradient(circle, var(--color-background, --blue-900), var(--color-background, --blue-900) 100%);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 0% 100%;
     
-    transition: background-size var(--transition-duration) ease-in-out, 
-                width var(--transition-duration) ease-in-out, 
-                transform var(--transition-duration) ease-in-out, 
-                box-shadow var(--transition-duration) ease-in-out,
-                color calc(var(--transition-duration) / 2) ease-in-out;
+    transition: background-size var(--transition-duration, 300ms) ease-in-out, 
+                width var(--transition-duration, 300ms) ease-in-out, 
+                transform var(--transition-duration, 300ms) ease-in-out, 
+                box-shadow var(--transition-duration, 300ms) ease-in-out,
+                color calc(var(--transition-duration, 300ms) / 2) ease-in-out;
 }
 
 .btn:hover {
     background-size: 100% 100%;
-    width: 195px;
+    width: var(--hover-width, 100%);
     transform: scale(1.01);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
     color: white;
