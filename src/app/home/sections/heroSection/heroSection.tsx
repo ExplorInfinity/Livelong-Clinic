@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import styles from './style.module.css'
-import right_arrow_svg from '/right-arrow.svg'
+import right_arrow_svg from '/src/assets/right-arrow.svg'
 import ColorFillBtn from "../../../../components/color_fill_btn/btn";
 
 export default function HeroSection(): JSX.Element {

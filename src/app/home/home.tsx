@@ -1,7 +1,7 @@
 import type { JSX } from "react";
-import HeroSection from "./sub-components/heroSection/heroSection";
-import FeatureBar from "./sub-components/featureBar/featureBar";
-import FeatureGrid from "./sub-components/featureGrid/featureGrid";
+import HeroSection from "./sections/heroSection/heroSection";
+import FeatureBar from "./sections/featureBar/featureBar";
+import FeatureGrid from "./sections/featureGrid/featureGrid";
 import LoginForm from "../features/auth/loginForm/loginForm";
 
 export default function Home(): JSX.Element {
