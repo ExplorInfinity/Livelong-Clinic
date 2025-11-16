@@ -129,7 +129,7 @@
 }
 
 .imgContainer {
-    background-image: url('../../../assets/doctor.jpg');
+    background-image: url('../../../../assets/doctor.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
