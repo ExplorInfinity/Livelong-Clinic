@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
     border-radius: 2px;
     border: none;
     animation: vanish 800ms ease-in-out;
@@ -30,7 +30,7 @@
         /* display: none; */
         transform: translateY(-300%);
     }
-    70% {
+    80% {
         opacity: 1;
         /* display: block; */
         transform: translateY(10%);

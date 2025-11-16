@@ -1,13 +1,13 @@
 import type { JSX } from "react";
-import HeroSection from "./heroSection/heroSection";
-import FeatureBar from "./featureBar/featureBar";
-import Grid from "../grid/grid";
+import HeroSection from "./sub-components/heroSection/heroSection";
+import FeatureBar from "./sub-components/featureBar/featureBar";
+import Grid from "./sub-components/grid/grid";
 import styles from './style.module.css'
 import { useEffect, useRef } from "react";
-import SimpleButton from "../simpleBtn/simpleBtn";
+import SimpleButton from "../../components/simpleBtn/simpleBtn";
 // import arrowSvg from '/right-arrow.svg'
 
-export default function Main(): JSX.Element {
+export default function Home(): JSX.Element {
 
     const dialogRef = useRef<HTMLDialogElement>(null);
 

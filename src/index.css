@@ -3,11 +3,25 @@
   --blue-700: hsl(195, 40%, 60%);
   --blue-800: hsl(195, 40%, 50%);
   --blue-900: hsl(195, 75%, 40%);
+
   --theme-color-main: var(--blue-900);
+  --theme-color-secondary: hsl(0, 0%, 97%);
+
+  --clr-primary-900: hsl(195, 75%, 40%);
+  --clr-primary-800: hsl(195, 50%, 50%);
+  --clr-primary-700: hsl(195, 50%, 60%);
+  --clr-primary-600: hsl(195, 50%, 70%);
+  --clr-primary-500: hsl(195, 50%, 80%);
+
+  --title-font-family: Arial;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }

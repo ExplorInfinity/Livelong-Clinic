@@ -2,7 +2,6 @@ import type {JSX} from 'react'
 import styles from './style.module.css'
 
 export default function Header(): JSX.Element {
-    console.log(styles);
     return (
         <header className={styles.header}>
             <h1 className={styles.website_name}>Livelong Clinic</h1>
