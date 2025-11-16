@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import HeroSection from "./sub-components/heroSection/heroSection";
 import FeatureBar from "./sub-components/featureBar/featureBar";
-import Grid from "./sub-components/grid/grid";
+import FeatureGrid from "./sub-components/featureGrid/featureGrid";
 import styles from './style.module.css'
 import { useEffect, useRef } from "react";
 import SimpleButton from "../../components/simpleBtn/simpleBtn";
@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
 
             <HeroSection />
             <FeatureBar />
-            <Grid />
+            <FeatureGrid />
 
             <dialog ref={dialogRef} className={styles.loginPage}>
                 <div className={styles.banner}>

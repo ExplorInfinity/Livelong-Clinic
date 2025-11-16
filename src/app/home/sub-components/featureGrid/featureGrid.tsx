@@ -1,13 +1,13 @@
 import type { JSX } from "react";
 import styles from './style.module.css'
-import Card from "../card/card";
+import Card from "./card/card";
 
-import doctors from '/doctors.svg'
-import treatment from '/treatment.svg'
-import bed from '/bed.svg'
-import microscope from '/microscope.svg'
+import doctors from '/src/assets/doctors.svg'
+import treatment from '/src/assets/treatment.svg'
+import bed from '/src/assets/bed.svg'
+import microscope from '/src/assets/microscope.svg'
 
-export default function Grid(): JSX.Element {
+export default function FeatureGrid(): JSX.Element {
     return (
         <div className={styles.grid}>
             <Card img={doctors} imagePadding={20}
