@@ -20,6 +20,15 @@
     padding: 10px 100px;
 }
 
+.main_heading {
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-shadow: 1px 1px 5px hsla(0, 0%, 80%, 0.4);
+    color: var(--text-main-quote);
+}
+
 .main_quote {
     color: white;
     font-size: 40px;
