@@ -6,9 +6,20 @@ import locationB from '/src/assets/locationB.png'
 import locationC from '/src/assets/locationC.jpeg'
 import locationD from '/src/assets/locationD.png'
 
-const images: string[] = [locationA, locationB, locationC, locationD];
+type Location = {
+    imgsrc: string
+    location: string
+}
+
+const locations: Location[] = [
+    { imgsrc: locationA, location: "Chandigarh" }, 
+    { imgsrc: locationB, location: "Delhi" }, 
+    { imgsrc: locationC, location: "Mumbai" }, 
+    { imgsrc: locationD, location: "Kolkata" }
+];
+
 export default function Locations(): JSX.Element {
-    const cards = images.map(src => <LocationCard imgsrc={src} />)
+    const cards = locations.map(e => <LocationCard imgsrc={e.imgsrc} location={e.location} />)
     return (
         <div className={styles.locations}>
             <h1>Locations</h1>

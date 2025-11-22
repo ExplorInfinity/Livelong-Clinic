@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import styles from './style.module.css'
-import right_arrow_svg from '/src/assets/right-arrow.svg'
+import rightArrowSvg from '/src/assets/rightArrow.svg'
 import ColorFillBtn from "../../../../components/color_fill_btn/btn";
 
 export default function HeroSection(): JSX.Element {
@@ -8,7 +8,7 @@ export default function HeroSection(): JSX.Element {
         <div className={styles.heroSection}>
             <div className={styles.titleSection}>
                 <h1 className={styles.main_quote}>Empowering you to Livelong — and live better.</h1>
-                <ColorFillBtn text="Get Appointment" svg={right_arrow_svg} styleVariables={{ 
+                <ColorFillBtn text="Get Appointment" svg={rightArrowSvg} styleVariables={{ 
                     backgroundColor: "hsl(195, 75%, 40%)", 
                     transitionDuration: 300,
                     width: 180,
