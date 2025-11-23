@@ -12,14 +12,15 @@ type btnStyles = {
 
 type btnProps = {
     text : string
+    type?: "button" | "submit"
     styleVariables: btnStyles
 }
 
-export default function SimpleButton({ text, styleVariables }: btnProps): JSX.Element {
+export default function SimpleButton({ text, type="button", styleVariables }: btnProps): JSX.Element {
     const { textColor, backgroundColor, transitionDuration, justifyContent, width }:btnStyles = styleVariables;
 
     return (
-        <button style={
+        <button type={type} style={
             { 
                 "--color-text": textColor,
                 "--color-background": backgroundColor,

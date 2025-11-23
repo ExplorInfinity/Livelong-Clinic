@@ -2,10 +2,10 @@ import type {JSX} from 'react'
 import styles from './style.module.css'
 
 type HeaderProps = {
-    toggleLoginForm: () => void
+    showLoginForm: () => void
 }
 
-export default function Header({ toggleLoginForm } : HeaderProps): JSX.Element {
+export default function Header({ showLoginForm } : HeaderProps): JSX.Element {
     return (
         <header className={styles.header}>
             <h1 className={styles.website_name}>Livelong Clinic</h1>
@@ -24,7 +24,7 @@ export default function Header({ toggleLoginForm } : HeaderProps): JSX.Element {
                         <div className={styles.hoverBar}></div>
                     </li>
                     <li>
-                        <a onClick={toggleLoginForm} target="_self" href="#">Appointments</a>
+                        <a onClick={showLoginForm} target="_self" href="#">Appointments</a>
                         <div className={styles.hoverBar}></div>
                     </li>
                 </ul>
