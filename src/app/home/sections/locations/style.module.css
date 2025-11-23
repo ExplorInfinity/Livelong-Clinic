@@ -24,13 +24,15 @@
 .locations h1 {
     font-family: "Nota Sans", sans-serif;
     color: var(--clr-primary-800);
-    margin: 0 20px;
+    margin: 0 10px;
     text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
 }
 
 .locationCards {
     /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); */
     /* grid-template-rows: 400px; */
     display: flex;
     gap: 10px;
