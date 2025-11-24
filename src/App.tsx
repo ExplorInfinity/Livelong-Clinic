@@ -3,6 +3,7 @@ import Header from './app/shared/header/header'
 import Footer from './app/shared/footer/footer'
 import Home from './app/home/home'
 import LoginForm from './app/features/auth/loginForm/loginForm'
+import FindDoctor from './app/features/findDoctor/findDoctor'
 
 function App(): JSX.Element {
 
@@ -19,9 +20,10 @@ function App(): JSX.Element {
   return (
     <>
       <Header showLoginForm={() => showDialog(dialogRef)} />
-      <Home />
-      <Footer />
+      <Home/>
+      <Footer/>
       <LoginForm forwardRef={dialogRef} closeForm={(): void => closeDialog(dialogRef)} />
+      <FindDoctor />
     </>
   )
 }
