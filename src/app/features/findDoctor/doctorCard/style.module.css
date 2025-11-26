@@ -55,8 +55,8 @@
 .name .expelled {
     font-size: 11px;
     color: white;
-    background-color: red;
-    border-radius: 20px;
+    background-color: crimson;
+    border-radius: 30px;
     padding: 5px 10px;
     margin: 0 10px;
 }
