@@ -39,6 +39,15 @@
     color: gray;
 }
 
+.specialities li {
+    display: inline;
+}
+
+.specialities li + li::before {
+    content: "•";
+    margin: 5px;
+}
+
 .rating {
     color: gray;
     font-size: 16px;
