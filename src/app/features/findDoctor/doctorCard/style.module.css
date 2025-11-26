@@ -22,6 +22,8 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .specialityHeading {
@@ -48,4 +50,13 @@
 
 .rating span {
     color: hsl(210, 40%, 50%);
+}
+
+.name .expelled {
+    font-size: 11px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 10px;
 }

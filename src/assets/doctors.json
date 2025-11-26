@@ -6,7 +6,8 @@
             "rating": 0.1,
             "totalRatings": 669,
             "totalReviews": 69,
-            "specialities": [ "Heart Failure" ]
+            "specialities": [ "Heart Failure" ],
+            "expelled": true
         },
         {
             "name": "Nitesh Kumar",
@@ -30,7 +31,7 @@
             "rating": 4.8,
             "totalRatings": 172,
             "totalReviews": 37,
-            "specialities": [ "Urology", "Gynecologist" ]
+            "specialities": [ "Urology", "Gynecology" ]
         }
     ]
 }
