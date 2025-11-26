@@ -1,0 +1,36 @@
+{
+    "doctors": [
+        {
+            "name": "Adarsh Balu",
+            "degrees": [ "MD", "PhD" ],
+            "rating": 0.1,
+            "totalRatings": 669,
+            "totalReviews": 69,
+            "specialities": [ "Heart Failure" ]
+        },
+        {
+            "name": "Nitesh Kumar",
+            "degrees": [ "MD" ],
+            "rating": 2.1,
+            "totalRatings": 600,
+            "totalReviews": 60,
+            "specialities": [ "Heart Attack" ]
+        },
+        {
+            "name": "Tarunya Kesharwani",
+            "degrees": [ "MD", "PhD" ],
+            "rating": 4.9,
+            "totalRatings": 1445,
+            "totalReviews": 87,
+            "specialities": [ "Gastroentrology" ]
+        },
+        {
+            "name": "Anmol Gautam",
+            "degrees": [ "MD" ],
+            "rating": 4.8,
+            "totalRatings": 172,
+            "totalReviews": 37,
+            "specialities": [ "Urology", "Gynecologist" ]
+        }
+    ]
+}

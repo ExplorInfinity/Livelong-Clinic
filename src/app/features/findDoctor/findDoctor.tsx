@@ -1,6 +1,7 @@
 import { useEffect, useRef, type JSX } from "react";
-import styles from './style.module.css'
-import DoctorCard from "./doctorCard/doctorCard";
+import styles from './style.module.css';
+import DoctorCard, { type DoctorCardProps } from "./doctorCard/doctorCard";
+import data from '../../../assets/doctors.json';
 
 export default function FindDoctor(): JSX.Element {
     const dialogRef = useRef<HTMLDialogElement>(null);
@@ -8,6 +9,8 @@ export default function FindDoctor(): JSX.Element {
     useEffect(() => {
         dialogRef.current?.showModal();
     }, []);
+
+    const doctorCards: Array<JSX.Element> = data.doctors.map((d: DoctorCardProps): JSX.Element => <DoctorCard { ...d } />);
 
     return (
         <dialog ref={dialogRef} className={styles.main_section}>
@@ -21,22 +24,7 @@ export default function FindDoctor(): JSX.Element {
             </div>
 
             <div className={styles.results}>
-                <DoctorCard 
-                    name="Adarsh Balu" 
-                    degrees={[ "MD", "PhD" ]} 
-                    rating={1.1}
-                    totalRatings={669}
-                    totalReviews={69}
-                    specialities={[ "Heart Failure" ]}
-                />
-                <DoctorCard 
-                    name="Nitesh Kumar" 
-                    degrees={[ "MD" ]} 
-                    rating={2.1}
-                    totalRatings={600}
-                    totalReviews={60}
-                    specialities={[ "Heart Attack" ]}
-                />
+                { ...doctorCards }
             </div>
 
         </dialog>

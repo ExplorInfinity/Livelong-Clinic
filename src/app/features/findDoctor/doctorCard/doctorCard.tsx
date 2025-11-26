@@ -2,7 +2,7 @@ import type { JSX } from 'react';
 import styles from './style.module.css'
 import unknown from '/src/assets/unknown.svg'
 
-type DoctorCardProps = {
+export type DoctorCardProps = {
     imgsrc?: string
     name: string
     degrees: string[]
