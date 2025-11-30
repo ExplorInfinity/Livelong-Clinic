@@ -7,7 +7,8 @@ import FindDoctor from './app/features/findDoctor/findDoctor'
 
 function App(): JSX.Element {
 
-  const dialogRef = useRef<HTMLDialogElement | null>(null);
+  const loginDialogRef = useRef<HTMLDialogElement | null>(null);
+  const findDialogRef = useRef<HTMLDialogElement | null>(null);
 
   function showDialog(dialogRef: React.RefObject<HTMLDialogElement | null>) {
     dialogRef.current?.showModal();
@@ -19,11 +20,14 @@ function App(): JSX.Element {
 
   return (
     <>
-      <Header showLoginForm={() => showDialog(dialogRef)} />
-      <Home/>
+      <Header 
+        showLoginForm={() => showDialog(loginDialogRef)} 
+        showFindDoctorsPage={() => showDialog(findDialogRef)}
+        />
+      <Home showLoginForm={() => showDialog(loginDialogRef)} />
       <Footer/>
-      <LoginForm forwardRef={dialogRef} closeForm={(): void => closeDialog(dialogRef)} />
-      <FindDoctor />
+      <LoginForm forwardRef={loginDialogRef} closeForm={(): void => closeDialog(loginDialogRef)} />
+      <FindDoctor forwardRef={findDialogRef} />
     </>
   )
 }

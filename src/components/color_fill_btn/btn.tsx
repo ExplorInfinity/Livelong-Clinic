@@ -14,13 +14,14 @@ type btnProps = {
     text : string
     svg ?: string
     styleVariables: btnStyles
+    onClick ?: () => void
 }
 
-export default function ColorFillBtn({ text, svg, styleVariables }: btnProps): JSX.Element {
+export default function ColorFillBtn({ text, svg, styleVariables, onClick }: btnProps): JSX.Element {
     const { backgroundColor, transitionDuration, justifyContent, width, hoverWidth }:btnStyles = styleVariables;
 
     return (
-        <button style={
+        <button onClick={onClick} style={
             { 
                 "--color-background": backgroundColor,
                 "--transition-duration": `${transitionDuration}ms`,

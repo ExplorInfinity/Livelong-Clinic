@@ -8,7 +8,7 @@
     border-radius: 3px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 .main_section:focus, .main_section[open]:focus {
@@ -22,7 +22,8 @@
 .main_section h1 {
     text-align: center;
     color: var(--clr-primary-900);
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .inputContainer {
@@ -46,4 +47,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-block: 40px;
+    margin-inline: 50px;
+    border: none;
+    padding: 7px 12px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--clr-primary-900);
+    font-weight: bold;
+    width: 50px;
+    border-radius: 3px;
 }

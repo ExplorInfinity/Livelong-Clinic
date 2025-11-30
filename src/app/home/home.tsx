@@ -4,11 +4,15 @@ import FeatureBar from "./sections/featureBar/featureBar";
 import FeatureGrid from "./sections/featureGrid/featureGrid";
 import Locations from "./sections/locations/locations";
 
-export default function Home(): JSX.Element {
+type HomePageProps = {
+    showLoginForm: () => void
+}
+
+export default function Home({ showLoginForm } : HomePageProps): JSX.Element {
 
     return (
         <main>
-            <HeroSection />
+            <HeroSection showLoginForm={ showLoginForm } />
             <FeatureBar />
             <FeatureGrid />
             <Locations />

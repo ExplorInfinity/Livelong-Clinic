@@ -21,7 +21,7 @@ const locations: Location[] = [
 export default function Locations(): JSX.Element {
     const cards = locations.map(e => <LocationCard imgsrc={e.imgsrc} location={e.location} />)
     return (
-        <div className={styles.locations}>
+        <div id="locations" className={styles.locations}>
             <h1>Locations</h1>
             <div className={styles.locationCards}>
                 { ...cards }
