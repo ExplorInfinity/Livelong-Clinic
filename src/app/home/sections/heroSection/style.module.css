@@ -29,101 +29,114 @@
     color: var(--text-main-quote);
 }
 
+.title {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .main_quote {
-    color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
     text-shadow: 1px 1px 5px hsla(0, 0%, 80%, 0.4);
     color: var(--text-main-quote);
+    margin-block: 5px;
 }
 
-.secondary_text {
-    font-size: 17px;
-    margin: 0 10px;
-    color: hsl(0, 0%, 45%);
+.caption {
+    font-size: 22px;
+    margin-left: 5px;
+    font-weight: normal;
+    color: hsl(0, 0%, 30%);
 }
 
-.bold_text {
-    font-size: 65px;
-    margin-bottom: 10px;
-    display: block;
-    color: var(--text-extra-bold);
+.table {
+    background-color: white;
+    width: max-content;
+    padding: 25px;
+    padding-right: 60px;
+    margin: 20px;
+    box-shadow: 2px 2px 7px hsla(0, 0%, 80%, 0.7);
+    border-radius: 3px;
 }
 
-.get_appointment_btn {
-    --color-background: var(--blue-900);
-    --transition-duration: 300ms;
-    --padding: 20px;
+.featureHeading {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
-    width: 180px;
-    height: 50px;
-    margin: 20px 15px;
-    padding: var(--padding);
-
-    cursor: pointer;
-    border: none;
-    border-radius: 50px;
-    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.25);
-    
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.75px;
-
+.featureTable {
+    list-style: none;
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.featureTable li {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
     align-items: center;
-
-    position: relative;
-    background: radial-gradient(circle, var(--color-background), var(--color-background) 100%);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 0% 100%;
-    
-    transition: background-size var(--transition-duration) ease-in-out, 
-                width var(--transition-duration) ease-in-out, 
-                transform var(--transition-duration) ease-in-out, 
-                box-shadow var(--transition-duration) ease-in-out,
-                color calc(var(--transition-duration) / 2) ease-in-out;
+    color: hsl(0, 0%, 20%);
 }
 
-.get_appointment_btn:hover {
-    background-size: 100% 100%;
-    width: 195px;
-    transform: scale(1.01);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-    color: white;
-}
-
-.arrowSvg {
+.featureTable li img {
     width: 25px;
-    margin: 0;
-    animation: leftToRight 250ms ease-in-out;
-    /* filter: invert(1); */
-    /* translate: -15px 0; */
-    opacity: 0;
-    transition: opacity var(--transition-duration) ease-in-out, translate var(--transition-duration) ease-out;
-    display: none;
-    position: absolute;
-    right: 10px;
+    border-radius: 50%;
+    background-color: hsl(from skyblue h s l / 0.4);
+    padding: 3px;
+    margin-right: 10px;
 }
 
-.get_appointment_btn:hover .arrowSvg {
-    display: inline-block;
-    translate: 0 0;
-    opacity: 1;
+.btns {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.findDoctorsBtn, .getAppointmentBtn {
+    height: 45px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.findDoctorsBtn {
+    border: none;
+    color: white;
+    background-color: var(--clr-primary-900);
+    transition: transform 300ms ease-in-out, 
+                box-shadow 300ms ease-in-out;
+}
+
+.findDoctorsBtn img {
+    width: 25px;
+    height: 25px;
     filter: invert(1);
 }
 
-@keyframes leftToRight {
-    from {
-        translate: -15px 0;
-        opacity: 0;
-    }
-    to {
-        translate: 0 0;
-        opacity: 1;
-    }
+.findDoctorsBtn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px hsla(0, 0%, 50%, 0.5);
+}
+
+.getAppointmentBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--clr-primary-700);
+    transition: transform 300ms ease-in-out, 
+                box-shadow 300ms ease-in-out;
+}
+
+.getAppointmentBtn:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 4px hsla(0, 0%, 50%, 0.5);
 }
 
 /* Image Section */

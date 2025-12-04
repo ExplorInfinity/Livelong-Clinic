@@ -1,7 +1,8 @@
 import type { JSX } from "react";
-import styles from './style.module.css'
-import rightArrowSvg from '/src/assets/rightArrow.svg'
-import ColorFillBtn from "../../../../components/color_fill_btn/btn";
+import styles from './style.module.css';
+import rightArrowSvg from '/src/assets/rightArrow.svg';
+import doctorSmall from '/src/assets/doctorSmall.svg';
+import hospitalSmall from '/src/assets/hospitalSmall.svg';
 
 type HeroSectionProps = {
     showLoginForm: () => void
@@ -11,17 +12,21 @@ export default function HeroSection({ showLoginForm } : HeroSectionProps): JSX.E
     return (
         <div className={styles.heroSection}>
             <div className={styles.titleSection}>
-                <h1 className={styles.main_quote}>Empowering you to Livelong — and live better.</h1>
-                <ColorFillBtn 
-                    text="Get Appointment" 
-                    svg={rightArrowSvg} 
-                    onClick={showLoginForm}
-                    styleVariables={{ 
-                        backgroundColor: "hsl(195, 75%, 40%)", 
-                        transitionDuration: 300,
-                        width: 180,
-                        hoverWidth: 195
-                    }} />
+                <div className={styles.title}>
+                    <h1 className={styles.main_quote}>Biggest Clinics in India</h1>
+                    <h2 className={styles.caption}>Empowering you to Livelong — and live better.</h2>
+                </div>
+                <div className={styles.table}>
+                    <h4 className={styles.featureHeading}>Best class services</h4>
+                    <ul className={styles.featureTable}>
+                        <li><img src={doctorSmall} />Experienced doctors across specialties</li>
+                        <li><img src={hospitalSmall} />24x7 emergency services and ambulances</li>
+                    </ul>
+                    <div className={styles.btns}>
+                        <button className={styles.findDoctorsBtn}>Find Doctors <img src={rightArrowSvg} /></button>
+                        <button onClick={showLoginForm} className={styles.getAppointmentBtn}>Get Appointment</button>
+                    </div>
+                </div>
             </div>
             <div className={styles.imageSection}>
                 <div className={styles.imgContainer}></div>
