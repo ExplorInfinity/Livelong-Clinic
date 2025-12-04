@@ -26,6 +26,7 @@ export default function HeroSection({ showLoginForm } : HeroSectionProps): JSX.E
                         <button className={styles.findDoctorsBtn}>Find Doctors <img src={rightArrowSvg} /></button>
                         <button onClick={showLoginForm} className={styles.getAppointmentBtn}>Get Appointment</button>
                     </div>
+                    <p className={styles.certifiedTag}><span style={{color: "#F0AD4E"}}>★</span>4.9 (18k+ reviews)</p>
                 </div>
             </div>
             <div className={styles.imageSection}>
