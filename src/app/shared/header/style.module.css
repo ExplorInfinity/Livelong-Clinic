@@ -1,7 +1,4 @@
 .header {
-    /* position: sticky; */
-    /* top: 0; */
-    z-index: 1000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +14,7 @@
 .website_name {
     background-color: var(--theme-color-main, --blue-900);
     width: 60%;
+    max-width: 80%;
     height: 100%;
     flex-grow: 1;
     display: flex;
@@ -25,7 +23,7 @@
     padding: 0 20px;
     color: white;
     border-radius: 0 100px 100px 0;
-    font-size: clamp(1rem, 3vw, 2.25rem);
+    font-size: clamp(16px, 7vw, 32px);
     font-family: var(--title-font-family);
 }
 
@@ -71,4 +69,10 @@
 
 .navbar_list li:hover .hoverBar {
     scale: 1 1;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
 }
