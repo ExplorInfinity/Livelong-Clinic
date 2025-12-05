@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    width: 100vw;
+    width: 100%;
     height: 250px;
     background-color: hsl(197, 90%, 99%);
     background-image: linear-gradient(
@@ -17,7 +17,7 @@
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     scale: 0.98;
-    opacity: 0;
+    opacity: 0.1;
     animation: left2Right ease-in-out forwards;
     animation-timeline: view();
     animation-range-start: 10vh;
@@ -35,12 +35,12 @@
 }
 
 .title {
-    font-size: clamp(20px, 5vw, 25px);
+    font-size: clamp(16px, 4vw, 25px);
 }
 
 .description {
     color: hsl(0, 0%, 35%);
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: clamp(14px, 3vw, 18px);
     margin: 10px 0;
 }
 
@@ -48,21 +48,24 @@
     to { opacity: 1; scale: 1; }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 630px) {
     .container {
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background: none;
+        height: auto;
+        animation-range-start: 10vh;
+        animation-range-end: 30vh;
     }
 
     .info {
-        padding: 20px;
+        padding-block: 10px;
+        padding-left: 20px;
+        padding-right: 0;
     }
 
     .img {
-        width: 95%;
-        height: 200px;
+        width: 35%;
+        aspect-ratio: 1;
+        object-fit: contain;
+        padding: 10px !important;
     }
 }

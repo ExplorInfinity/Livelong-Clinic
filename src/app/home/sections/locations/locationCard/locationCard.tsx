@@ -10,7 +10,7 @@ type LocationCardProps = {
 export default function LocationCard({ imgsrc, location }: LocationCardProps): JSX.Element {
     return (
         <div className={styles.card}>
-            <img src={imgsrc} alt="Location A" />
+            <img className={styles.locationImg} src={imgsrc} alt="Location A" />
             <div className={styles.backdrop}></div>
             <div className={styles.locationTag}>
                 <img src={locationPinSvg} alt="location" />

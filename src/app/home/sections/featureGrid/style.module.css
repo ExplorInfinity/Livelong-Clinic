@@ -1,5 +1,11 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(630px, 1fr));
+    width: 100vw;
+}
+
+@media (max-width: 630px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
