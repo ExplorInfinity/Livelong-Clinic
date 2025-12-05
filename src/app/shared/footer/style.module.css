@@ -2,7 +2,7 @@
     background-color: var(--theme-color-main);
     height: 120px;
     color: white;
-    font-size: 17px;
+    font-size: clamp(14px, 4vw, 17px);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
