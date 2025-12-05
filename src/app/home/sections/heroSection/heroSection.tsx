@@ -12,11 +12,11 @@ export default function HeroSection({ showLoginForm } : HeroSectionProps): JSX.E
     return (
         <div className={styles.heroSection}>
             <div className={styles.titleSection}>
-                <div className={styles.title}>
+                <div className={styles.quotes}>
                     <h1 className={styles.main_quote}>Biggest Clinics in India</h1>
                     <h2 className={styles.caption}>Empowering you to Livelong — and live better.</h2>
                 </div>
-                <div className={styles.table}>
+                <div className={styles.highlightBox}>
                     <h4 className={styles.featureHeading}>Best class services</h4>
                     <ul className={styles.featureTable}>
                         <li><img src={doctorSmall} />Experienced doctors across specialties</li>

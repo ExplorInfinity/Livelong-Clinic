@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 .heroSection {
-    --background-hero-section: hsl(0, 0%, 97%);
+    --background-hero-section: var(--theme-color-secondary);
     --text-main-quote: hsl(195, 50%, 50%);
     --text-extra-bold: hsl(195, 40%, 50%);
     --font-family: Arial, Helvetica, sans-serif;
@@ -18,20 +18,11 @@
 .titleSection {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     padding: 10px 100px;
 }
 
-.main_heading {
-    color: white;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-    text-shadow: 1px 1px 5px hsla(0, 0%, 80%, 0.4);
-    color: var(--text-main-quote);
-}
-
-.title {
+.quotes {
     margin: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -39,7 +30,7 @@
 }
 
 .main_quote {
-    font-size: 50px;
+    font-size: clamp(30px, 7vw, 50px);
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 5px hsla(0, 0%, 80%, 0.4);
     color: var(--text-main-quote);
@@ -47,19 +38,19 @@
 }
 
 .caption {
-    font-size: 22px;
+    font-size: clamp(12px, 4vw, 22px);
     margin-left: 5px;
     font-weight: normal;
     color: hsl(0, 0%, 30%);
 }
 
-.table {
+.highlightBox {
     background-color: white;
     width: max-content;
     padding: 25px;
     padding-right: 60px;
     margin: 20px;
-    box-shadow: 2px 2px 7px hsla(0, 0%, 80%, 0.7);
+    box-shadow: 2px 2px 15px hsla(0, 0%, 80%, 0.7);
     border-radius: 3px;
     position: relative;
 }
@@ -78,7 +69,7 @@
 
 .featureTable li {
     text-decoration: none;
-    font-size: 18px;
+    font-size: clamp(16px, 3vw, 18px);
     display: flex;
     align-items: center;
     color: hsl(0, 0%, 20%);
@@ -140,7 +131,7 @@
 
 .getAppointmentBtn:hover {
     transform: scale(1.01);
-    box-shadow: 0 2px 4px hsla(0, 0%, 50%, 0.5);
+    box-shadow: 0 2px 4px hsla(0, 0%, 50%, 0.2);
 }
 
 .certifiedTag {
@@ -241,5 +232,54 @@
     }
     95% {
         translate: calc(100% + 125px) calc(200% + 62.5px);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .heroSection {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 75px 10px;
+        overflow: hidden;
+    }
+
+    .titleSection {
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .main_quote {
+        width: 40ch;
+    }
+
+    .caption {
+        margin: 0;
+        width: minmax(30ch, 40ch);
+    }
+
+    .quotes {
+        gap: 0;
+    }
+    
+    .highlightBox {
+        max-width: calc(90vw - 20px);
+        margin: 10px;
+        /* margin-inline: auto; */
+        padding: 25px;
+    }
+
+    .btns {
+        padding: 15px 0;
+    }
+    
+    .imageSection {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .btns {
+        flex-direction: column;
     }
 }

@@ -5,7 +5,7 @@
   --blue-900: hsl(195, 75%, 40%);
 
   --theme-color-main: var(--blue-900);
-  --theme-color-secondary: hsl(0, 0%, 97%);
+  --theme-color-secondary: hsl(0, 0%, 100%);
 
   --clr-primary-900: hsl(195, 75%, 40%);
   --clr-primary-800: hsl(195, 50%, 50%);
