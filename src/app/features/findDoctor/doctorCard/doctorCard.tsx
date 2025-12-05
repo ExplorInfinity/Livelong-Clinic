@@ -40,15 +40,15 @@ export default function DoctorCard({
                         {starTypes[0].repeat(starsToShow)}
                     </span> 
                     {starTypes[1].repeat(5 - starsToShow)} {rating} of 5 stars | {" "}
-                    <span>{totalRatings} Ratings, {totalReviews} Reviews</span>
+                    <span className={styles.reviews}>{totalRatings} Ratings, {totalReviews} Reviews</span>
                 </p>
-
-                <p className={styles.specialities}>
+                
+                <div className={styles.specialities}>
                     Specialities
                     <ul>{ ...specialitiesList }</ul>
-                </p>
-
+                </div>
             </div>
+
         </div>
     );
 }

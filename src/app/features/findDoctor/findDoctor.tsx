@@ -45,7 +45,7 @@ export default function FindDoctor({ forwardRef } : FindDoctorProps): JSX.Elemen
             <div className={styles.inputContainer}>
                 <label>
                     Need help finding a particular doctor?
-                    <input ref={inputRef} onInput={handleInputChange} type="text" placeholder="Search by condition, speciality or doctor's name" />
+                    <input ref={inputRef} onInput={handleInputChange} type="text" placeholder="Search by speciality or doctor's name" />
                 </label>
             </div>
 

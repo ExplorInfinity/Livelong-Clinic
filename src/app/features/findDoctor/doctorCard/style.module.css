@@ -5,21 +5,22 @@
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: start;
+    gap: 20px;
 }
 
 .doctorCard img {
-    width: 120px;
-    margin-right: 50px;
+    width: 40%;
+    max-width: 120px;
 }
 
 .details {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
 }
 
 .name {
-    font-size: 20px;
+    font-size: clamp(16px, 4vw, 20px);
     font-weight: bold;
     margin-bottom: 5px;
     display: flex;
@@ -50,11 +51,13 @@
 
 .rating {
     color: gray;
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: clamp(16px, 4vw, 18px);
 }
 
 .rating .ratingStars {
     color: #F0AD4E;
+    font-size: clamp(16px, 4vw, 18px);
 }
 
 .rating span {
@@ -68,4 +71,21 @@
     border-radius: 30px;
     padding: 5px 10px;
     margin: 0 10px;
+}
+
+@media (max-width: 660px) {
+
+    .rating {
+        margin-top: 5px;
+    }
+
+    .reviews {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .name .expelled {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
 }
