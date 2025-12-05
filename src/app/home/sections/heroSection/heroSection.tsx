@@ -6,9 +6,10 @@ import hospitalSmall from '/src/assets/hospitalSmall.svg';
 
 type HeroSectionProps = {
     showLoginForm: () => void
+    showFindDoctorsPage: () => void
 }
 
-export default function HeroSection({ showLoginForm } : HeroSectionProps): JSX.Element {
+export default function HeroSection({ showLoginForm, showFindDoctorsPage } : HeroSectionProps): JSX.Element {
     return (
         <div className={styles.heroSection}>
             <div className={styles.titleSection}>
@@ -23,7 +24,7 @@ export default function HeroSection({ showLoginForm } : HeroSectionProps): JSX.E
                         <li><img src={hospitalSmall} />24x7 emergency services and ambulances</li>
                     </ul>
                     <div className={styles.btns}>
-                        <button className={styles.findDoctorsBtn}>Find Doctors <img src={rightArrowSvg} /></button>
+                        <button onClick={showFindDoctorsPage} className={styles.findDoctorsBtn}>Find Doctors <img src={rightArrowSvg} /></button>
                         <button onClick={showLoginForm} className={styles.getAppointmentBtn}>Get Appointment</button>
                     </div>
                     <p className={styles.certifiedTag}><span style={{color: "#F0AD4E"}}>★</span>4.9 (18k+ reviews)</p>

@@ -6,13 +6,17 @@ import Locations from "./sections/locations/locations";
 
 type HomePageProps = {
     showLoginForm: () => void
+    showFindDoctorsPage: () => void
 }
 
-export default function Home({ showLoginForm } : HomePageProps): JSX.Element {
+export default function Home({ showLoginForm, showFindDoctorsPage } : HomePageProps): JSX.Element {
 
     return (
         <main>
-            <HeroSection showLoginForm={ showLoginForm } />
+            <HeroSection 
+                showLoginForm = { showLoginForm } 
+                showFindDoctorsPage = { showFindDoctorsPage } 
+                />
             <FeatureBar />
             <FeatureGrid />
             <Locations />

@@ -24,7 +24,10 @@ function App(): JSX.Element {
         showLoginForm={() => showDialog(loginDialogRef)} 
         showFindDoctorsPage={() => showDialog(findDialogRef)}
         />
-      <Home showLoginForm={() => showDialog(loginDialogRef)} />
+      <Home 
+        showLoginForm={() => showDialog(loginDialogRef)} 
+        showFindDoctorsPage={() => showDialog(findDialogRef)}
+        />
       <Footer/>
       <LoginForm forwardRef={loginDialogRef} closeForm={(): void => closeDialog(loginDialogRef)} />
       <FindDoctor forwardRef={findDialogRef} />
