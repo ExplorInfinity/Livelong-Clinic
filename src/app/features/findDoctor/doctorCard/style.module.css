@@ -73,7 +73,7 @@
     margin: 0 10px;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 550px) {
 
     .rating {
         margin-top: 5px;

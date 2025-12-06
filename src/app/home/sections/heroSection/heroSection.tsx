@@ -3,6 +3,7 @@ import styles from './style.module.css';
 import rightArrowSvg from '/src/assets/rightArrow.svg';
 import doctorSmall from '/src/assets/doctorSmall.svg';
 import hospitalSmall from '/src/assets/hospitalSmall.svg';
+import examination from '/src/assets/examination.svg';
 
 type HeroSectionProps = {
     showLoginForm: () => void
@@ -30,6 +31,7 @@ export default function HeroSection({ showLoginForm, showFindDoctorsPage } : Her
                     <p className={styles.certifiedTag}><span style={{color: "#F0AD4E"}}>★</span>4.9 (18k+ reviews)</p>
                 </div>
             </div>
+            <div className={styles.tabletImg}><img src={examination} alt="Doctor Examination" /></div>
             <div className={styles.imageSection}>
                 <div className={styles.imgContainer}></div>
                 <div className={styles.backgroundBoxes}>

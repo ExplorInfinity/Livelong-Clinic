@@ -9,7 +9,7 @@ type FindDoctorProps = {
 
 export default function FindDoctor({ forwardRef } : FindDoctorProps): JSX.Element {
     const [doctors, setDoctors] = useState(data.doctors);
-    const doctorCards: Array<JSX.Element> = doctors.map((d: DoctorCardProps): JSX.Element => <DoctorCard { ...d } />);
+    const doctorCards: Array<JSX.Element> = doctors.slice(0, 50).map((d: DoctorCardProps): JSX.Element => <DoctorCard { ...d } />);
 
     const inputRef = useRef<HTMLInputElement>(null);
 

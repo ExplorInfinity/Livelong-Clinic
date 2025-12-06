@@ -1,37 +1,81 @@
 {
-    "doctors": [
-        {
-            "name": "Adarsh Balu",
-            "degrees": [ "MD", "PhD" ],
-            "rating": 0.1,
-            "totalRatings": 669,
-            "totalReviews": 69,
-            "specialities": [ "Heart Failure" ],
-            "expelled": true
-        },
-        {
-            "name": "Nitesh Kumar",
-            "degrees": [ "MD" ],
-            "rating": 2.1,
-            "totalRatings": 600,
-            "totalReviews": 60,
-            "specialities": [ "Heart Attack" ]
-        },
-        {
-            "name": "Tarunya Kesharwani",
-            "degrees": [ "MD", "PhD" ],
-            "rating": 4.9,
-            "totalRatings": 1445,
-            "totalReviews": 87,
-            "specialities": [ "Gastroentrology" ]
-        },
-        {
-            "name": "Anmol Gautam",
-            "degrees": [ "MD" ],
-            "rating": 4.8,
-            "totalRatings": 172,
-            "totalReviews": 37,
-            "specialities": [ "Urology", "Gynecology", "Nephrology" ]
-        }
-    ]
+  "doctors": [
+    { "name": "Adarsh Balu", "degrees": ["MD","PhD"], "rating": 0.1, "totalRatings": 669, "totalReviews": 69, "specialities": ["Heart Failure"], "expelled": true },
+    { "name": "Nitesh Kumar", "degrees": ["MD"], "rating": 2.1, "totalRatings": 600, "totalReviews": 60, "specialities": ["Heart Attack"] },
+    { "name": "Tarunya Kesharwani", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 1445, "totalReviews": 87, "specialities": ["Gastroentrology"] },
+    { "name": "Anmol Gautam", "degrees": ["MD"], "rating": 4.8, "totalRatings": 172, "totalReviews": 37, "specialities": ["Urology","Gynecology","Nephrology"] },
+
+    { "name": "Ridhi Verma", "degrees": ["MD"], "rating": 4.2, "totalRatings": 890, "totalReviews": 73, "specialities": ["Dermatology"] },
+    { "name": "Karan Patel", "degrees": ["MD","PhD"], "rating": 3.8, "totalRatings": 450, "totalReviews": 41, "specialities": ["Endocrinology"] },
+    { "name": "Shreya Malhotra", "degrees": ["MD"], "rating": 4.6, "totalRatings": 1200, "totalReviews": 95, "specialities": ["Pediatrics"] },
+    { "name": "Rohit Chandra", "degrees": ["MD"], "rating": 3.3, "totalRatings": 320, "totalReviews": 28, "specialities": ["Orthopedics"] },
+    { "name": "Megha Sethi", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 2100, "totalReviews": 150, "specialities": ["Neurology"] },
+    { "name": "Aarav Raghavan", "degrees": ["MD"], "rating": 2.7, "totalRatings": 510, "totalReviews": 52, "specialities": ["General Medicine"] },
+
+    { "name": "Priya Menon", "degrees": ["MD"], "rating": 4.7, "totalRatings": 980, "totalReviews": 80, "specialities": ["Cardiology"] },
+    { "name": "Siddharth Iyer", "degrees": ["MD","PhD"], "rating": 4.8, "totalRatings": 1500, "totalReviews": 120, "specialities": ["Oncology"] },
+    { "name": "Lakshmi Rao", "degrees": ["MD"], "rating": 4.5, "totalRatings": 740, "totalReviews": 60, "specialities": ["Gynecology"] },
+    { "name": "Harshad Kulkarni", "degrees": ["MD"], "rating": 4.3, "totalRatings": 680, "totalReviews": 55, "specialities": ["ENT"] },
+    { "name": "Manasi Dixit", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 2100, "totalReviews": 160, "specialities": ["Pulmonology"] },
+    { "name": "Vikram Solanki", "degrees": ["MD"], "rating": 4.6, "totalRatings": 540, "totalReviews": 45, "specialities": ["Dermatology"] },
+    { "name": "Ananya Khurana", "degrees": ["MD"], "rating": 4.8, "totalRatings": 1900, "totalReviews": 130, "specialities": ["Pediatrics"] },
+    { "name": "Rajat Awasthi", "degrees": ["MD"], "rating": 4.4, "totalRatings": 880, "totalReviews": 68, "specialities": ["Endocrinology"] },
+    { "name": "Simran Grewal", "degrees": ["MD","PhD"], "rating": 4.7, "totalRatings": 1100, "totalReviews": 94, "specialities": ["Neurology"] },
+    { "name": "Yash Thakur", "degrees": ["MD"], "rating": 4.6, "totalRatings": 700, "totalReviews": 56, "specialities": ["Cardiology"] },
+
+    { "name": "Naina Arora", "degrees": ["MD"], "rating": 4.3, "totalRatings": 650, "totalReviews": 48, "specialities": ["Ophthalmology"] },
+    { "name": "Arjun Khanna", "degrees": ["MD","PhD"], "rating": 4.7, "totalRatings": 1500, "totalReviews": 120, "specialities": ["Nephrology"] },
+    { "name": "Shruti Bhandari", "degrees": ["MD"], "rating": 4.8, "totalRatings": 1950, "totalReviews": 140, "specialities": ["Gastroentrology"] },
+    { "name": "Parth Mehta", "degrees": ["MD"], "rating": 4.5, "totalRatings": 620, "totalReviews": 50, "specialities": ["Orthopedics"] },
+    { "name": "Ishani Kapoor", "degrees": ["MD"], "rating": 4.9, "totalRatings": 2100, "totalReviews": 170, "specialities": ["Gynecology"] },
+    { "name": "Sahil Shergill", "degrees": ["MD"], "rating": 4.4, "totalRatings": 580, "totalReviews": 47, "specialities": ["ENT"] },
+    { "name": "Harini Vashisht", "degrees": ["MD","PhD"], "rating": 4.7, "totalRatings": 1010, "totalReviews": 88, "specialities": ["Pulmonology"] },
+    { "name": "Keshav Adhikari", "degrees": ["MD"], "rating": 4.3, "totalRatings": 480, "totalReviews": 38, "specialities": ["General Medicine"] },
+    { "name": "Tanya Roy", "degrees": ["MD"], "rating": 4.6, "totalRatings": 750, "totalReviews": 61, "specialities": ["Dermatology"] },
+    { "name": "Devang Nair", "degrees": ["MD","PhD"], "rating": 4.8, "totalRatings": 1600, "totalReviews": 130, "specialities": ["Cardiology"] },
+
+    { "name": "Rekha Bansal", "degrees": ["MD"], "rating": 4.9, "totalRatings": 2300, "totalReviews": 180, "specialities": ["Neurology"] },
+    { "name": "Jai Chaturvedi", "degrees": ["MD"], "rating": 4.5, "totalRatings": 500, "totalReviews": 42, "specialities": ["Ophthalmology"] },
+    { "name": "Sonia Chib", "degrees": ["MD"], "rating": 4.7, "totalRatings": 1400, "totalReviews": 112, "specialities": ["Gastroentrology"] },
+    { "name": "Aditya Kanojia", "degrees": ["MD"], "rating": 4.4, "totalRatings": 680, "totalReviews": 53, "specialities": ["Orthopedics"] },
+    { "name": "Karishma Ghosh", "degrees": ["MD","PhD"], "rating": 4.8, "totalRatings": 1700, "totalReviews": 140, "specialities": ["Nephrology"] },
+    { "name": "Ankit Bedi", "degrees": ["MD"], "rating": 4.6, "totalRatings": 760, "totalReviews": 62, "specialities": ["Cardiology"] },
+    { "name": "Malika Wadhwa", "degrees": ["MD"], "rating": 4.5, "totalRatings": 740, "totalReviews": 57, "specialities": ["Gynecology"] },
+    { "name": "Vedant Sawhney", "degrees": ["MD"], "rating": 4.7, "totalRatings": 1500, "totalReviews": 120, "specialities": ["Pediatrics"] },
+    { "name": "Aisha Zaveri", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 2600, "totalReviews": 200, "specialities": ["Oncology"] },
+    { "name": "Dhruv Rastogi", "degrees": ["MD"], "rating": 4.3, "totalRatings": 560, "totalReviews": 45, "specialities": ["Endocrinology"] },
+
+    { "name": "Ritika Rathi", "degrees": ["MD"], "rating": 4.6, "totalRatings": 880, "totalReviews": 70, "specialities": ["Pulmonology"] },
+    { "name": "Aman Chopra", "degrees": ["MD"], "rating": 4.4, "totalRatings": 640, "totalReviews": 50, "specialities": ["Orthopedics"] },
+    { "name": "Rashi Anand", "degrees": ["MD","PhD"], "rating": 4.8, "totalRatings": 1800, "totalReviews": 150, "specialities": ["Neurology"] },
+    { "name": "Shaurya Bajaj", "degrees": ["MD"], "rating": 4.5, "totalRatings": 700, "totalReviews": 55, "specialities": ["General Medicine"] },
+    { "name": "Lara Jacob", "degrees": ["MD"], "rating": 4.9, "totalRatings": 2400, "totalReviews": 190, "specialities": ["Dermatology"] },
+    { "name": "Advik Gupta", "degrees": ["MD","PhD"], "rating": 4.7, "totalRatings": 1300, "totalReviews": 105, "specialities": ["Cardiology"] },
+    { "name": "Meera Khanna", "degrees": ["MD"], "rating": 4.8, "totalRatings": 1550, "totalReviews": 125, "specialities": ["Gastroentrology"] },
+    { "name": "Raghav Singh", "degrees": ["MD"], "rating": 4.4, "totalRatings": 640, "totalReviews": 52, "specialities": ["ENT"] },
+    { "name": "Sana Qureshi", "degrees": ["MD"], "rating": 4.6, "totalRatings": 950, "totalReviews": 80, "specialities": ["Pediatrics"] },
+    { "name": "Rohan Purohit", "degrees": ["MD"], "rating": 4.5, "totalRatings": 760, "totalReviews": 63, "specialities": ["Pulmonology"] },
+
+    { "name": "Tanvi Bhatia", "degrees": ["MD"], "rating": 4.7, "totalRatings": 1150, "totalReviews": 90, "specialities": ["Nephrology"] },
+    { "name": "Ishaan Virk", "degrees": ["MD"], "rating": 4.3, "totalRatings": 500, "totalReviews": 40, "specialities": ["Endocrinology"] },
+    { "name": "Niharika Desai", "degrees": ["MD"], "rating": 4.8, "totalRatings": 1800, "totalReviews": 140, "specialities": ["Cardiology"] },
+    { "name": "Akhil Raina", "degrees": ["MD"], "rating": 4.5, "totalRatings": 670, "totalReviews": 54, "specialities": ["Orthopedics"] },
+    { "name": "Divya Mathur", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 2600, "totalReviews": 210, "specialities": ["Neurology"] },
+    { "name": "Varun Rawal", "degrees": ["MD"], "rating": 4.4, "totalRatings": 620, "totalReviews": 49, "specialities": ["General Medicine"] },
+    { "name": "Samaira Singh", "degrees": ["MD"], "rating": 4.6, "totalRatings": 890, "totalReviews": 71, "specialities": ["Gynecology"] },
+    { "name": "Zayan Kapoor", "degrees": ["MD"], "rating": 4.7, "totalRatings": 1300, "totalReviews": 110, "specialities": ["Ophthalmology"] },
+    { "name": "Aradhya Mishra", "degrees": ["MD","PhD"], "rating": 4.9, "totalRatings": 2700, "totalReviews": 220, "specialities": ["Oncology"] },
+    { "name": "Kunal Vyas", "degrees": ["MD"], "rating": 4.5, "totalRatings": 740, "totalReviews": 58, "specialities": ["Dermatology"] },
+
+    { "name": "Esha Banerjee", "degrees": ["MD"], "rating": 4.8, "totalRatings": 1600, "totalReviews": 130, "specialities": ["Cardiology"] },
+    { "name": "Kartik Oman", "degrees": ["MD"], "rating": 4.6, "totalRatings": 730, "totalReviews": 59, "specialities": ["ENT"] },
+    { "name": "Sia Luthra", "degrees": ["MD","PhD"], "rating": 4.7, "totalRatings": 1450, "totalReviews": 118, "specialities": ["Pulmonology"] },
+    { "name": "Reyansh Tandon", "degrees": ["MD"], "rating": 4.5, "totalRatings": 720, "totalReviews": 55, "specialities": ["Nephrology"] },
+    { "name": "Myra Sachdeva", "degrees": ["MD"], "rating": 4.9, "totalRatings": 2500, "totalReviews": 200, "specialities": ["Pediatrics"] },
+    { "name": "Aarush Suri", "degrees": ["MD"], "rating": 4.4, "totalRatings": 560, "totalReviews": 44, "specialities": ["Orthopedics"] },
+    { "name": "Mannat Juneja", "degrees": ["MD"], "rating": 4.7, "totalRatings": 1200, "totalReviews": 98, "specialities": ["Gastroentrology"] },
+    { "name": "Kabir Ansari", "degrees": ["MD","PhD"], "rating": 4.8, "totalRatings": 1750, "totalReviews": 150, "specialities": ["Neurology"] },
+    { "name": "Rhea Chawla", "degrees": ["MD"], "rating": 4.6, "totalRatings": 800, "totalReviews": 65, "specialities": ["Gynecology"] },
+    { "name": "Omkar Shinde", "degrees": ["MD"], "rating": 4.5, "totalRatings": 690, "totalReviews": 55, "specialities": ["General Medicine"] }
+  ]
 }

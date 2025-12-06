@@ -146,6 +146,16 @@
 }
 
 /* Image Section */
+.tabletImg {
+    display: none;
+    max-height: 50vh;
+    width: 100%;
+    max-width: 90vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
 .imageSection {
     /* width: 430px; */
     height: 600px;
@@ -238,18 +248,18 @@
 @media screen and (max-width: 1150px) {
     .heroSection {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         padding: clamp(40px, 10vw, 75px) 10px;
         overflow: hidden;
     }
 
     .titleSection {
         padding: 10px;
-        width: 100vw;
     }
 
     .main_quote {
-        width: 40ch;
+        width: max-content;
     }
 
     .caption {
@@ -264,12 +274,20 @@
     .highlightBox {
         max-width: calc(90vw - 20px);
         margin: 10px;
-        /* margin-inline: auto; */
         padding: 25px;
     }
 
     .btns {
         padding: 15px 0;
+    }
+
+    .tabletImg {
+        display: flex;
+    }
+
+    .tabletImg img {
+        padding: 20px;
+        height: 100%;
     }
     
     .imageSection {
@@ -278,8 +296,32 @@
     
 }
 
+@media screen and (max-width: 1000px) {
+
+    .heroSection {
+        grid-template-columns: auto;
+    }
+
+    .tabletImg {
+        order: -1;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .btns {
         flex-direction: column;
+    }
+
+    .tabletImg {
+        width: 100vw;
+    }
+
+    .tabletImg img {
+        width: 100%;
+        object-fit: contain;
     }
 }
