@@ -187,7 +187,6 @@
 }
 
 .imgContainer:hover {
-    /* box-shadow: 0 0 5px black; */
     transform: rotateZ(2deg) scale(1.02);
 }
 

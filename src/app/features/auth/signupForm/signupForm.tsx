@@ -2,13 +2,13 @@ import type { JSX } from 'react';
 import styles from './style.module.css';
 import SimpleButton from '../../../../components/simpleBtn/simpleBtn';
 
-type LoginFormProps = {
+type SignupFormProps = {
     forwardRef: React.RefObject<HTMLDialogElement | null>
-    openSignupForm: () => void
+    openLoginForm: () => void
     closeForm: () => void
 }
 
-export default function LoginForm({ forwardRef, openSignupForm }: LoginFormProps) : JSX.Element {
+export default function SignupForm({ forwardRef, openLoginForm }: SignupFormProps) : JSX.Element {
 
     return (
         <dialog ref={forwardRef} className={styles.loginPage}>
@@ -17,18 +17,20 @@ export default function LoginForm({ forwardRef, openSignupForm }: LoginFormProps
             </div>
 
             <form className={styles.loginForm} method="DIALOG">
-                <label htmlFor="username">Enter your Patient ID</label>
-                <input type="text" name="username" id="username" placeholder="Username" />
+                <label htmlFor="name">Enter your name</label>
+                <input type="text" name="name" id="name" placeholder="name" />
+                <label htmlFor="dob">Enter your DOB</label>
+                <input type="date" name="dob" id="dob" placeholder="Date of birth" />
                 <label htmlFor="password">Enter your password</label>
                 <input type="text" name="password" id="password" placeholder="Password" />
 
                 <div className={styles.formBtns}>
-                    <SimpleButton text="Login" type="submit" styleVariables={{
+                    <SimpleButton text="Sign Up" type="submit" styleVariables={{
                         backgroundColor: "var(--blue-900)",
                         transitionDuration: 250,
                         justifyContent: "center"
                     }} />
-                    <SimpleButton text="Sign Up" type="submit" onclick={openSignupForm} styleVariables={{
+                    <SimpleButton text="Login" type="submit" onclick={openLoginForm} styleVariables={{
                         backgroundColor: "white",
                         transitionDuration: 250,
                         justifyContent: "center",
